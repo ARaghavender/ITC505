@@ -174,9 +174,54 @@
     font-weight: 600;
     margin-bottom: 10px;
     position: absolute;
-    right: 80%;
+    right: 87%;
     top: 1500%;}
 
+.Addendum{
+    display: inline-block;
+    background: lightslategray;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-right: -100px;  
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 1800px;  
+    right: 65%;
+}
+.about .about-content .right .Addendum-1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 40%;
+    top: 2100%;}
+
+.read-more-btn {
+    display: inline-block;
+    background: lightslategray;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    position: absolute;
+    right: 40%;
+    top: 100%;
+}
+
+/* Button Hover Effect */
+.read-more-btn:hover {
+    background: #333;
+    color: crimson;
+}
 
 section .title{
     position: relative;
