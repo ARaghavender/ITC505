@@ -6,6 +6,23 @@ body {
 .hover{
     color: white;
 }
+.heading{
+    color: white;
+    
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+.research {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 25px;
+            width: 70%;
+            color: white;
+            font-family:'Righteous' ;
+        }
 .card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -89,5 +106,11 @@ label:hover + .font-sample {
 
 .DancingScript {
     font-family: 'Dancing Script';
+    color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
     color: white;
 }
