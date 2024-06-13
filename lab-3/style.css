@@ -1,0 +1,93 @@
+body {
+    font-family: Arial;
+    background-color: black;
+
+}
+.hover{
+    color: white;
+}
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    width: 10%;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.font-sample {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+label:hover + .font-sample {
+    opacity: 1;
+}
+
+.Pacifico {
+    font-family: 'Pacifico';
+    color: white;
+}
+
+.Lobster {
+    font-family: 'Lobster';
+    color: white;
+}
+
+.GreatVibes {
+    font-family: 'Great Vibes';
+    color: white;
+}
+
+.IndieFlower {
+    font-family: 'Indie Flower';
+    color: white;
+}
+
+.Quicksand {
+    font-family: 'Quicksand';
+    color: white;
+}
+
+.AmaticSC {
+    font-family: 'Amatic SC';
+    color: white;
+}
+
+.Righteous {
+    font-family: 'Righteous';
+    color: white;
+}
+
+.Cookie {
+    font-family: 'Cookie';
+    color: white;
+}
+
+.Anton {
+    font-family: 'Anton';
+    color: white;
+}
+
+
+.DancingScript {
+    font-family: 'Dancing Script';
+    color: white;
+}
