@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Selector with Transition</title>
+    <title>Serving Fonts</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Great+Vibes&family=Indie+Flower&family=Quicksand&family=Amatic+SC&family=Righteous&family=Cookie&family=Anton&family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class='hover'>Hover on a Font</h1>
-    
+    <h1 class='heading'>Serving Font</h1>
+    <p class ='research'>I have researched fonts from various sites and selected several from Google Fonts, including 'Pacifico', 'Lobster', 'Great Vibes', 'Indie Flower', 'Quicksand', 'Amatic SC', 'Righteous', 'Cookie', 'Anton', and 'Dancing Script'. These fonts can be imported via a URL from the Google Fonts website.
+
+In the CSS, I used a class called .font-sample to style the font samples. This class positions the text absolutely at the center of its container, sets the font size to 40px, and initially hides the text by setting its opacity to 0. The opacity transitions to 1 when the element is hovered over, creating a fade-in effect.
+
+Labels are styled as block elements with a margin to ensure proper spacing. Using a CSS sibling selector, the font sample becomes visible when the label is hovered over.
+
+For specific fonts, additional classes (like .Pacifico) are created to apply the respective font-family and text color.
+
+In the HTML, labels and font samples are structured so that hovering over a label triggers the display of the associated font sample, providing an interactive preview of the fonts. This setup allows users to see how each font looks in a smooth and visually appealing manner.</p>
     <label class="card">Pacifico</label>
     <div class="font-sample Pacifico">This is a sample text with Pacifico.</div>
 
@@ -40,5 +49,15 @@
     <label class="card">Dancing Script</label>
     <div class="font-sample DancingScript">This is a sample text with Dancing Script.</div>
 </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
 </body>
 </html>
