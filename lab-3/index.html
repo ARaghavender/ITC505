@@ -1,55 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serving Fonts</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&family=Great+Vibes&family=Indie+Flower&family=Quicksand&family=Amatic+SC&family=Righteous&family=Cookie&family=Anton&family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class='hover'>Hover on a Font</h1>
     <h1 class='heading'>Serving Font</h1>
-    <p class ='research'>I have researched fonts from various sites and selected several from Google Fonts, including 'Pacifico', 'Lobster', 'Great Vibes', 'Indie Flower', 'Quicksand', 'Amatic SC', 'Righteous', 'Cookie', 'Anton', and 'Dancing Script'. These fonts can be imported via a URL from the Google Fonts website.
+    
 
-In the CSS, I used a class called .font-sample to style the font samples. This class positions the text absolutely at the center of its container, sets the font size to 40px, and initially hides the text by setting its opacity to 0. The opacity transitions to 1 when the element is hovered over, creating a fade-in effect.
+    <label class="card">Tiny5</label>
+    <div class="font-sample Tiny5"><p>
+I have researched various fonts available on Google Fonts, ultimately selecting 'Tiny5' due to its rarity, with only 5% of users opting for this particular font. In my CSS stylesheet, I've utilized a class called .font-sample to style the font previews. These previews are positioned centrally within their containers, initially hidden with an opacity of 0. When the user hovers over corresponding labels (styled as block elements with appropriate margins), the font samples fade in smoothly (opacity transitioning to 1). This setup provides an interactive preview of each font's appearance, enabling users to compare and select fonts seamlessly directly on the web page.
 
-Labels are styled as block elements with a margin to ensure proper spacing. Using a CSS sibling selector, the font sample becomes visible when the label is hovered over.
+Additionally, the @import rule in CSS is employed to include external style sheets into the main CSS file. This approach helps in organizing and managing styles by allowing separate CSS files to be imported. For instance, Google Fonts are often imported using @import statements, ensuring that the desired fonts are available and applied consistently across the website without cluttering the main CSS file.</p></div>
 
-For specific fonts, additional classes (like .Pacifico) are created to apply the respective font-family and text color.
-
-In the HTML, labels and font samples are structured so that hovering over a label triggers the display of the associated font sample, providing an interactive preview of the fonts. This setup allows users to see how each font looks in a smooth and visually appealing manner.</p>
-    <label class="card">Pacifico</label>
-    <div class="font-sample Pacifico">This is a sample text with Pacifico.</div>
-
-    <label class="card">Lobster</label>
-    <div class="font-sample Lobster">This is a sample text with Lobster.</div>
-
-    <label class="card">Great Vibes</label>
-    <div class="font-sample GreatVibes">This is a sample text with Great Vibes.</div>
-
-    <label class="card">Indie Flower</label>
-    <div class="font-sample IndieFlower">This is a sample text with Indie Flower.</div>
-
-    <label class="card">Quicksand</label>
-    <div class="font-sample Quicksand">This is a sample text with Quicksand.</div>
-
-    <label class="card">Amatic SC</label>
-    <div class="font-sample AmaticSC">This is a sample text with Amatic SC.</div>
-
-    <label class="card">Righteous</label>
-    <div class="font-sample Righteous">This is a sample text with Righteous.</div>
-
-    <label class="card">Cookie</label>
-    <div class="font-sample Cookie">This is a sample text with Cookie.</div>
-
-    <label class="card">Anton</label>
-    <div class="font-sample Anton">This is a sample text with Anton.</div>
-
-    <label class="card">Dancing Script</label>
-    <div class="font-sample DancingScript">This is a sample text with Dancing Script.</div>
-    <label class="card">Dancing Script</label>
-    <div class="font-sample DancingScript">This is a sample text with Dancing Script.</div>
+    
 </div>
 
     <footer>
