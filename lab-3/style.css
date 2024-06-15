@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5');
 body {
-    font-family: Arial;
+    font-family:Tiny5;
     background-color: black;
 
 }
@@ -13,16 +14,7 @@ body {
     top: 0%;
     left: 50%;
 }
-.research {
-            position: absolute;
-            top: 5%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 25px;
-            width: 70%;
-            color: white;
-            font-family:'Righteous' ;
-        }
+
 .card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -44,7 +36,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 30px;
     opacity: 0;
     transition: opacity 0.5s;
 }
@@ -58,56 +50,12 @@ label:hover + .font-sample {
     opacity: 1;
 }
 
-.Pacifico {
-    font-family: 'Pacifico';
+
+.Tiny5 {
+    font-family: 'Tiny5';
     color: white;
 }
 
-.Lobster {
-    font-family: 'Lobster';
-    color: white;
-}
-
-.GreatVibes {
-    font-family: 'Great Vibes';
-    color: white;
-}
-
-.IndieFlower {
-    font-family: 'Indie Flower';
-    color: white;
-}
-
-.Quicksand {
-    font-family: 'Quicksand';
-    color: white;
-}
-
-.AmaticSC {
-    font-family: 'Amatic SC';
-    color: white;
-}
-
-.Righteous {
-    font-family: 'Righteous';
-    color: white;
-}
-
-.Cookie {
-    font-family: 'Cookie';
-    color: white;
-}
-
-.Anton {
-    font-family: 'Anton';
-    color: white;
-}
-
-
-.DancingScript {
-    font-family: 'Dancing Script';
-    color: white;
-}
 
 footer{
     position: absolute;
