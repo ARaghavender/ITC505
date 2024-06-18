@@ -21,7 +21,7 @@ body {
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 45px;
-    cursor: pointer;
+    cursor:default;
     width: 10%;
     transition: transform 0.3s;
     text-align: center;
@@ -37,17 +37,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
-    opacity: 0;
+
     transition: opacity 0.5s;
 }
 
 label {
-    display: block;
+ 
     margin: 5px 0;
 }
 
 label:hover + .font-sample {
-    opacity: 1;
+ ;
 }
 
 
