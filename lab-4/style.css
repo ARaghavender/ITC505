@@ -81,7 +81,7 @@ ul {
 }
 
 a {
-    color: crimson;
+    color: black;
     text-decoration: none;
 }
 
@@ -126,13 +126,4 @@ footer p {
 
 .addendum ul ul {
     margin-left: 20px;
-}
-
-.addendum a {
-    color: crimson;
-    text-decoration: none;
-}
-
-.addendum a:hover {
-    text-decoration: underline;
 }
