@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ideal Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+<header>
+    <h1>Ideal Weight Calculator</h1>
+</header>
+
+<div class="main">
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <img src="main-content.jpg" alt="Content Image">
+
+        <h2>Ideal Weight Calculator</h2>
+        
+        <form id="idealWeightForm">
+            <label for="weight">Weight (lbs):</label>
+            <input type="number" id="weight" name="weight" required>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        <br><br><br>
+        <div id="result">
+           
+        </div>
+    </div>
+
+    <div class="advertisement">
+        <h3>Advertisement</h3><br><br><br>
+        <a href="https://www.amazon.com/Oura-Ring-Gen3-Horizon-Tracking/dp/B0CSRJR845/ref=sr_1_2?crid=2CZCBXOBVRSX7&dib=eyJ2IjoiMSJ9.WZefwEsjSrXTSxN-gEWdvGQX_-X15NYzQJF7RW1uhzyNPlldHtX71ZGpGjfP7TokwjyH81gmNuaslqeY3fVUT4TTHtJNWrKy7HKzeC91OYR3tE_GOgLlYnqChWIFv3K5l8Oijq4V3Pb5D-2hiPU2ISe_7IyVjkupAmbaU0hxcYBj4fnKc7U3JrzbbCGFZSai7LnbFkKUi78Ra2uZR766hTuR0uhZTRbKRki0J6mzz9n17jZ1CJKx4HjeriSiZVDaGhrenhYx9Wz6DoKg__zl4ScEidNw3cFshHtYzfhYLvI._Im7MPRIlAALNh0x_nt-9FLMCH7LO2J1pFUyLtUZ8t0&dib_tag=se&keywords=oura%2Bring&qid=1720916134&sprefix=oura%2Bring%2Caps%2C128&sr=8-2&th=1" target="_blank">
+            <img src="add1.jpg" alt="Advertisement">
+        </a>
+        <h4 class="blinking">Buy This.....</h4>
+    </div>
+
+</div>
+
+<footer>
+    <p>Addendum: This calculator uses the Devine formula to calculate ideal weight based on height and gender. The JavaScript implementation ensures that users enter valid inputs and provides feedback if the weight is above or below the ideal weight. Initially, managing form validation and displaying dynamic results were challenging. However, these were resolved by structuring the JavaScript to handle events and input validations efficiently.</p>
+
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+   
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</footer>
+
+</div><!-- .wrapper -->
+
+<script src="main_content.js"></script>
+</body>
+</html>
