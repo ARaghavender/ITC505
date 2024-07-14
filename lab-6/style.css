@@ -1,0 +1,94 @@
+/* Reset default margin and padding */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Wrapper for layout */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Header styles */
+header {
+    background-color: #4A90E2; /* Sky Blue */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Main content area */
+.main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #F5F5F5; /* Light Gray */
+    padding: 10px;
+    width: 200px;
+}
+
+/* Content area styles */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFFFFF; /* White */
+}
+
+/* Footer styles */
+footer {
+    background-color: #4A90E2;  /* Dark Charcoal */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Advertisement styles */
+.advertisement h3{
+    background-color: lightgreen; /* Light Silver */
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto; /* Push to the right side */
+}
+.advertisement {
+    background-color: #F8F9FA; /* Light Silver */
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin-left: auto; /* Push to the right side */
+}
+
+/* Advertisement image styles */
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+    background: white;
+}
+
+/* Content image styles */
+.content img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add bottom margin */
+}
+
+/* Define a keyframes animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Apply the animation to the element */
+.blinking {
+    animation: blink 1s infinite; /* 1s duration, infinite repeat */
+    color: red;
+}
