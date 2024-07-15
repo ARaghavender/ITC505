@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Interactive Story Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="container" onclick="playAudio()">
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider">
+        <span class="title">Sound?</span>
+        <span class="ball">
+          <span class="icon">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="25" height="25" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 18V6l8 6-8 6Z"></path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  </div>
+
+  <video autoplay muted loop id="snowVideo" style="opacity: 0.1">
+    <source src="https://magical-story-game.netlify.app/snow.mp4" type="video/mp4" />
+  </video>
+
+  <video autoplay muted loop id="snowVideo" style="opacity: 0.3">
+    <source src="https://magical-story-game.netlify.app/thunder.mp4" type="video/mp4" />
+  </video>
+
+  <video autoplay muted loop id="snowVideo" style="opacity: 0.6">
+    <source src="https://magical-story-game.netlify.app/cinematic.mp4" type="video/mp4" />
+  </video>
+
+  <video autoplay muted id="birdVideo" style="opacity: 0.5">
+    <source src="https://magical-story-game.netlify.app/bird.mp4" type="video/mp4" />
+  </video>
+
+  <video autoplay muted loop id="snowVideo" style="opacity: 0.1">
+    <source src="https://magical-story-game.netlify.app/smoke.mp4" type="video/mp4" />
+  </video>
+
+  <audio id="bgAudio" style="display: none">
+    <source src="https://magical-story-game.netlify.app/bg.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="main">
+    <div id="gameContainer" class="game-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+    <footer>
+      <p>Addendum: This interactive story game allows users to make choices that affect the storyline. The HTML structure includes a title,
+      a stylesheet link, video elements for a dynamic background, and containers for the game's interactive elements. The
+      JavaScript handles the game's logic, including updating the storyline based on user choices, playing background audio,
+      and managing transitions between different stages. One of the challenges was creating seamless transitions and ensuring
+      that user interactions were smooth and engaging. This was resolved by structuring the code to handle events efficiently
+      and using CSS animations to enhance the user experience.</p>
+      <p>Last updated:
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      var x = document.lastModified;
+      document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+
+</html>
