@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lights Out</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 class="game-heading">LIGHTS OUT</h1>
+    <div id="board">
+        <br><br>
+        <div class="row">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+            <div id="4"></div>
+            <div id="5"></div>
+        </div>
+        <div class="row">
+            <div id="6"></div>
+            <div id="7"></div>
+            <div id="8"></div>
+            <div id="9"></div>
+            <div id="10"></div>
+        </div>
+        <div class="row">
+            <div id="11"></div>
+            <div id="12"></div>
+            <div id="13"></div>
+            <div id="14"></div>
+            <div id="15"></div>
+        </div>
+        <div class="row">
+            <div id="16"></div>
+            <div id="17"></div>
+            <div id="18"></div>
+            <div id="19"></div>
+            <div id="20"></div>
+        </div>
+        <div class="row">
+            <div id="21"></div>
+            <div id="22"></div>
+            <div id="23"></div>
+            <div id="24"></div>
+            <div id="25"></div>
+        </div>
+        <br><br>
+        <button id="shuffle">Let's Play</button>
+        <button id="play-again" class="not-show">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+    <div class="addendum">
+        <h3>Addendum</h3>
+        <p>The main objective of the game is to turn on all the lights on the board, with an alert box appearing with
+            the message "You Finished the Game Successfully!" once completed. The game board is a 5x5 grid where
+            initially, some lights are randomly turned on. The player needs to toggle the lights logically until all
+            lights on the board are turned on. Clicking the "New Game" button resets the game to its initial state,
+            while the "Help" button displays a dialog box with game instructions and a close button. The 5x5 grid layout
+            is designed using CSS grid layout, balancing the size of the cells and the spacing between them. A random
+            initial state ensures replayability, with at least one light turned on at the beginning for engagement.
+            Achieving a balanced difficulty was challenging due to the random starting state, with different setups
+            tested to maintain a fair challenge. Implementing clear visual feedback for toggling lights was crucial,
+            reflecting the player's actions through CSS classes that control light states and manipulate DOM elements.
+            Careful planning of the interface design and event handling for each cell created an intuitive and
+            responsive interface, ensuring smooth cell interactions and a user-friendly game experience. The game
+            identifies a win condition when all lights are turned on, providing immediate gratification and feedback by
+            iterating over the grid and displaying a success message.</p>
+                <footer>
+                    <p>Last updated:
+                        <span id="lastModified"></span>
+                    </p>
+                </footer>
+                <script type="text/javascript">
+                    var x = document.lastModified;
+                    document.getElementById('lastModified').textContent = x;
+                </script>
+    </div>
+</body>
+
+</html>
